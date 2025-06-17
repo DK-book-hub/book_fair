@@ -1,0 +1,166 @@
+[
+  {
+    "id": 4,
+    "title": "旅フェア",
+    "date": "2025-06-17",
+    "description": "本を片手に旅に出よう。移動と風景の読書体験10選。",
+    "image": "travel.jpg",
+    "tag": "旅",
+    "color": "#e6f7ff",
+    "books": [
+      {"author": "池澤夏樹", "title": "静かな大地"},
+      {"author": "沢木耕太郎", "title": "深夜特急"},
+      {"author": "ヘミングウェイ", "title": "移動祝祭日"},
+      {"author": "高野秀行", "title": "謎の独立国家ソマリランド"},
+      {"author": "村上春樹", "title": "遠い太鼓"},
+      {"author": "宮本輝", "title": "泥の河"},
+      {"author": "司馬遼太郎", "title": "街道をゆく"},
+      {"author": "三浦しをん", "title": "風が強く吹いている"},
+      {"author": "梨木香歩", "title": "家守綺譚"},
+      {"author": "上橋菜穂子", "title": "獣の奏者"}
+    ]
+  },
+  {
+    "id": 3,
+    "title": "赤い表紙フェア",
+    "date": "2025-06-10",
+    "description": "赤い本には情熱・怒り・愛が詰まっている！？ 赤をキーワードにした選書。",
+    "image": "red.jpg",
+    "tag": "色",
+    "color": "#ffe6e6",
+    "books": [
+      {"author": "ダンテ", "title": "神曲 地獄篇"},
+      {"author": "吉本ばなな", "title": "キッチン"},
+      {"author": "フィッツジェラルド", "title": "グレート・ギャツビー"},
+      {"author": "カフカ", "title": "変身"},
+      {"author": "ドストエフスキー", "title": "罪と罰"},
+      {"author": "大江健三郎", "title": "万延元年のフットボール"},
+      {"author": "ル=クレジオ", "title": "黄金の魚"},
+      {"author": "芥川龍之介", "title": "羅生門"},
+      {"author": "鴻上尚史", "title": "赤と黒"},
+      {"author": "スタンダール", "title": "赤と黒"}
+    ]
+  },
+  {
+    "id": 2,
+    "title": "料理フェア",
+    "date": "2025-06-03",
+    "description": "台所から世界をのぞいてみる。食と人間の関係を味わう10冊。",
+    "image": "chinese.jpg",
+    "tag": "食",
+    "color": "#fff7e6",
+    "books": [
+      {"author": "平松洋子", "title": "肉とすっぽん"},
+      {"author": "小川糸", "title": "ツバキ文具店"},
+      {"author": "阿川佐和子", "title": "うからはらから"},
+      {"author": "土井善晴", "title": "一汁一菜でよいという提案"},
+      {"author": "辰巳芳子", "title": "あなたのために"},
+      {"author": "高山なおみ", "title": "今日を味わう"},
+      {"author": "井上荒野", "title": "夜のピクニック"},
+      {"author": "角田光代", "title": "八日目の蝉"},
+      {"author": "エッセイスト編集部", "title": "台所のメモ帳"},
+      {"author": "マイケル・ポーラン", "title": "料理の四面体"}
+    ]
+  },
+{
+  "id": 1,
+  "title": "現代詩フェア",
+  "date": "2025-05-27",
+  "description": "日常を見つめ直す言葉たち。詩の力で心を耕す10冊を紹介します。",
+  "image": "poetry.jpg",
+  "tag": "詩",
+  "color": "#f2e0f0",
+  "books": [
+    {
+      "author": "谷川俊太郎",
+      "title": "二十億光年の孤独",
+      "description": "宇宙と人間の距離を詩の言葉で描いた、不朽の名詩集。",
+      "image": "poetry.jpg",
+      "link": "https://www.amazon.co.jp/%E4%BA%8C%E5%8D%81%E5%84%84%E5%85%89%E5%B9%B4%E3%81%AE%E5%AD%A4%E7%8B%AC-%E9%9B%86%E8%8B%B1%E7%A4%BE%E6%96%87%E5%BA%AB-%E8%B0%B7%E5%B7%9D-%E4%BF%8A%E5%A4%AA%E9%83%8E/dp/4087462684"
+    },
+    {
+      "author": "茨木のり子",
+      "title": "倚りかからず",
+      "description": "凛とした言葉が心を打つ、女性の生き方を問う詩集。",
+      "image": "poetry.jpg",
+      "link": ""
+    },
+    {
+      "author": "宮沢賢治",
+      "title": "春と修羅",
+      "description": "自然と魂の交信を詩で描いた、賢治の代表作。",
+      "image": "poetry.jpg",
+      "link": ""
+    },
+    {
+      "author": "中原中也",
+      "title": "山羊の歌",
+      "description": "繊細で美しい言葉が紡ぐ、孤独と憂愁の詩世界。",
+      "image": "poetry.jpg",
+      "link": ""
+    },
+    {
+      "author": "最果タヒ",
+      "title": "夜空はいつでも最高密度の青色だ",
+      "description": "現代の息遣いをそのまま写し取ったような鋭い詩。",
+      "image": "poetry.jpg",
+      "link": ""
+    },
+    {
+      "author": "川上未映子",
+      "title": "先端で、さすわ さされるわ そらええわ",
+      "description": "女性の身体感覚をめぐる実験的で斬新な詩集。",
+      "image": "poetry.jpg",
+      "link": ""
+    },
+    {
+      "author": "小池昌代",
+      "title": "もっとも官能的な部屋",
+      "description": "日常と身体を見つめ直す現代詩の秀作。",
+      "image": "poetry.jpg",
+      "link": ""
+    },
+    {
+      "author": "長田弘",
+      "title": "深呼吸の必要",
+      "description": "読み手の心を穏やかに整えるような静かな詩。",
+      "image": "poetry.jpg",
+      "link": ""
+    },
+    {
+      "author": "高村光太郎",
+      "title": "道程",
+      "description": "「僕の前に道はない」から始まる名詩。生の姿勢を問う。",
+      "image": "poetry.jpg",
+      "link": ""
+    },
+    {
+      "author": "伊藤比呂美",
+      "title": "河原荒草",
+      "description": "母性と死をめぐる、濃密で力強い現代詩。",
+      "image": "poetry.jpg",
+      "link": ""
+    },
+    {
+      "author": "吉増剛造",
+      "title": "オシリス、石ノ神",
+      "description": "詩と声、身体が交差する独自の言語宇宙。",
+      "image": "poetry.jpg",
+      "link": ""
+    },
+    {
+      "author": "高橋睦郎",
+      "title": "星を撒いた街",
+      "description": "短詩に凝縮された宇宙と孤独。視覚と時間の詩。",
+      "image": "poetry.jpg",
+      "link": ""
+    }
+  ]
+}
+
+]
+
+
+
+
+

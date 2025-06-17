@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Book Fair</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <div class="max-w-6xl mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-6 text-center">📚 今週のフェア（最新4件）</h1>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+
+            {% for fair in fairs %}
+           <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+
+                {% if fair.image %}
+                   <img src="{{ url_for('static', filename='images/' + fair.image) }}"
+     alt="{{ fair.title }}"
+     class="w-full object-contain rounded-lg shadow mb-4">
+
+                {% endif %}
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-2">{{ fair.title }}</h2>
+                    <p class="text-sm text-gray-600">{{ fair.description[:60] }}{% if fair.description|length > 60 %}...{% endif %}</p>
+                    <p class="text-xs text-gray-400 mt-2">公開日：{{ fair.date }}</p>
+                    <div class="mt-4 text-right">
+                        <a href="/fair/{{ fair.id }}" class="inline-block bg-blue-500 text-white text-sm px-4 py-2 rounded hover:bg-blue-600">続きを読む →</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
