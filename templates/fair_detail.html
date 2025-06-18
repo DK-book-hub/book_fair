@@ -3,6 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ fair.title }}</title>
+    <script>
+  tailwind.config = {
+    theme: {
+      extend: {},
+      screens: {
+        xs: '320px',  // 独自ブレイクポイント追加
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+      }
+    }
+  }
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 font-sans">
@@ -14,34 +30,33 @@
         <p class="text-sm text-gray-500 mb-4">公開日：{{ fair.date }}</p>
 
         {% if fair.image %}
-<img src="{{ url_for('static', filename='images/' + fair.image) }}"
-     alt="{{ fair.title }}"
-     class="w-full object-contain max-h-[500px] rounded-lg shadow mb-6">
-{% endif %}
-
+        <img src="{{ url_for('static', filename='images/' + fair.image) }}"
+             alt="{{ fair.title }}"
+             class="w-full object-contain max-h-[500px] rounded-lg shadow mb-6">
+        {% endif %}
 
         <p class="text-lg text-gray-700 leading-relaxed mb-8">{{ fair.description }}</p>
 
-        <h2 class="text-xl font-bold mb-4">📚 選書リスト（12冊）</h2>
+        <h2 class="text-xl font-bold mb-4">📚 選書リスト（{{ fair.books|length }}冊）</h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
   {% for book in fair.books[:12] %}
   <div class="bg-white rounded-lg shadow p-4 flex flex-col items-center">
     {% if book.image %}
-      <img src="{{ url_for('static', filename='images/' + book.image) }}"
-           alt="{{ book.title }}"
-           class="w-full h-48 object-contain mb-3 rounded">
+    <img src="{{ url_for('static', filename='images/' + book.image) }}"
+         alt="{{ book.title }}"
+         class="w-full h-48 object-contain mb-3 rounded">
     {% endif %}
     <h3 class="text-base font-semibold text-center">{{ book.title }}</h3>
     <p class="text-sm text-gray-600 text-center mb-2">著者：{{ book.author }}</p>
     {% if book.description %}
-      <p class="text-sm text-gray-500 mb-2">{{ book.description }}</p>
+    <p class="text-sm text-gray-500 mb-2">{{ book.description }}</p>
     {% endif %}
     {% if book.link %}
-      <a href="{{ book.link }}" target="_blank"
-         class="text-sm bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 transition mt-auto">
-         Amazonで見る
-      </a>
+    <a href="{{ book.link }}" target="_blank"
+       class="text-sm bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 transition mt-auto">
+       Amazonで見る
+    </a>
     {% endif %}
   </div>
   {% endfor %}
