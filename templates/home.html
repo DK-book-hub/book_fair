@@ -3,26 +3,24 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>Book Fair</title>
+  <title>{{ fairs[0].title if fairs else "Book Fair" }}</title>
   <script>
-  tailwind.config = {
-    theme: {
-      extend: {},
-      screens: {
-        xs: '320px',  // 独自ブレイクポイント追加
-        sm: '640px',
-        md: '768px',
-        lg: '1024px',
-        xl: '1280px',
+    tailwind.config = {
+      theme: {
+        extend: {},
+        screens: {
+          xs: '320px',
+          sm: '640px',
+          md: '768px',
+          lg: '1024px',
+          xl: '1280px',
+        }
       }
     }
-  }
-</script>
-<script src="https://cdn.tailwindcss.com"></script>
-
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
-  
 </head>
+
 <body class="bg-gray-100 font-sans">
   <div class="max-w-6xl mx-auto px-4 py-8">
     <h1 class="text-3xl font-bold mb-6 text-center">📚 今週のフェア（最新4件）</h1>
